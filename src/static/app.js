@@ -22,23 +22,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Pretty participants section
         let participantsHTML = `
-          <div style="margin-top: 16px; padding: 12px; background: #eef6fb; border-radius: 4px;">
-            <strong style="color: #1a237e; font-size: 15px;">Participants:</strong>
+          <div class="activity-participants">
+            <strong>Participants:</strong>
         `;
         if (details.participants.length > 0) {
           participantsHTML += `
-            <ul style="margin: 10px 0 0 18px; padding: 0;">
+            <ul>
               ${details.participants
                 .map(
                   (p) =>
-                    `<li style="margin-bottom: 6px; color: #3949ab; font-weight: 500;">${p}</li>`
+                    `<li>${p}</li>`
                 )
                 .join("")}
             </ul>
           `;
         } else {
           participantsHTML += `
-            <span style="color: #888; margin-left: 8px;">No participants yet.</span>
+            <span class="no-participants">No participants yet.</span>
           `;
         }
         participantsHTML += `</div>`;
