@@ -142,3 +142,32 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.activity-participants {
+  margin-top: 16px;
+  padding: 12px;
+  background: #eef6fb;
+  border-radius: 4px;
+}
+
+.activity-participants strong {
+  color: #1a237e;
+  font-size: 15px;
+}
+
+.activity-participants ul {
+  margin: 10px 0 0 18px;
+  padding: 0;
+}
+
+.activity-participants li {
+  margin-bottom: 6px;
+  color: #3949ab;
+  font-weight: 500;
+}
+
+.activity-participants .no-participants {
+  color: #888;
+  margin-left: 8px;
+  font-style: italic;
+}
